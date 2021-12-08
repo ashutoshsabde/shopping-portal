@@ -21,13 +21,6 @@ pipeline {
         sh 'npm run package'
       }
     }
-
-#    stage('archive-the-app') {
-#      steps {
-#        archiveArtifacts '**/distribution/*.zip'
-#      }
-#    }
-
   }
   tools {
     nodejs 'nodejs'
